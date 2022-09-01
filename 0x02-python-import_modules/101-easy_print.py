@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-getattr(__builtins__, 'print')('#pythoniscool')
+
+import easy_print_101
