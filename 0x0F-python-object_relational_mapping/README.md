@@ -1,2 +1,1 @@
-
-Relational_mapping
+python ORM with mysql
