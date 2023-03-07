@@ -1,6 +1,7 @@
 #!/usr/bin/node
+let narg = 0;
 
 exports.logMe = function (item) {
-	  this.times = (this.times || 0) + 1;
-	  console.log(`${this.times - 1}: ${item}`);
+  console.log(narg + ': ' + item);
+  narg++;
 };
