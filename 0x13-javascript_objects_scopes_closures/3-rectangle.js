@@ -1,15 +1,21 @@
 #!/usr/bin/node
 class Rectangle {
-	  constructor (w, h) {
-		      if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
-			            this.width = w;
-			            this.height = h;
-			          }
-		    }
+  constructor (w, h) {
+    if ((w > 0) && (h > 0)) {
+      this.width = w;
+      this.height = h;
+    }
+  }
 
-	  print () {
-		      console.log(('X'.repeat(this.width) + '\n').repeat(this.height).split('')
-			            .slice(0, -1).join(''));
-		    }
+  print () {
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += 'X';
+      }
+      console.log(s);
+    }
+  }
 }
+
 module.exports = Rectangle;
